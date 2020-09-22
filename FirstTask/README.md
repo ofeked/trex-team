@@ -7,8 +7,16 @@ A. Install Oracle box / VMware player / VMWorkstation with Linux.
 B. Install Linux machine on cloud provider (AWS is the most common)
 Comment about linux distribution:
 For option A --> Ubuntu 18.04 LTS is the most recommended.
-                 Optional: Centos 7/8 / RHEL 7/8 / Ubuntu 20.04 LTS
+                 Optional: Centos 7/8 / Ubuntu 20.04 LTS
 For option B --> EC2--> Amazon Linux free tier
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+2. Install Docker-ce (community edition)
+Note: Dont forget to start service and enable on boot
 
+![Image of Docker](https://d1q6f0aelx0por.cloudfront.net/product-logos/library-docker-logo.png)
+![Image of Linux](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png)
+
+3. Run first docker container by running the following command:
+docker run hello-world
+
+![Image of hello-world](https://examples.javacodegeeks.com/wp-content/uploads/2016/11/01-docker-run-hello-world-2.jpg)
