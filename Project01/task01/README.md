@@ -1,8 +1,7 @@
 Description:
 Install Linux machine with Docker and run first container
 
-<img src="https://d1q6f0aelx0por.cloudfront.net/product-logos/library-docker-logo.png" width="120" height="120" alt="docker">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png" width="120" height="120" alt="linux">
+<img src="https://d1q6f0aelx0por.cloudfront.net/product-logos/library-docker-logo.png" width="120" height="120" alt="docker"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png" width="120" height="120" alt="linux">
 
 
 1. Install linux machine.
