@@ -22,6 +22,10 @@ sudo docker run hello-world
 ![Image of hello-world](https://examples.javacodegeeks.com/wp-content/uploads/2016/11/01-docker-run-hello-world-2.jpg)
 
 
+#For cleanup:
+#vagrant destroy
+
+
 Notes:
 Install Virtual box link:
 https://www.virtualbox.org/wiki/Downloads
@@ -33,14 +37,20 @@ vagrant suspend
 vagrant resume
 vagrant ssh
 vagrant destroy
+
 for more information vagrant --help
 
 
 Optional for Vagrant users with Oracle box:
+
 clone repository and use Vagrant file from our repository for automated installation of ubuntu 18.04 with docker.
 
 git clone https://github.com/ofeked/trex-team.git
+
 cd trex-team/Project01/task01/
+
 vagrant up
+
 vagrant ssh
+
 docker run hello-world
