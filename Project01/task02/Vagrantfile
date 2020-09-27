@@ -1,0 +1,31 @@
+Vagrant.configure("2") do |config|
+config.vm.box = "bento/ubuntu-18.04"
+config.vm.network "public_network"
+config.ssh.username = "vagrant"
+config.ssh.password = "vagrant"
+
+
+config.vm.provision "shell", inline: <<-SHELL
+sudo apt-get update
+
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common -y
+
+ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+
+sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+
+#When login with vagrant, the default user, change automatiicly to root.
+#This is usefull, in this way we need to add sudo before each command, all commands runs as root
+echo "sudo su - " > /home/vagrant/.bashrc
+SHELL
+end
